@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Spinner from './Spinner';
+import Footer from './Footer';
 import '../css/stylesheet.css';
 
 const App = () => { 
@@ -11,7 +12,9 @@ const App = () => {
                 <h3 className="description">Website in development</h3>
 
                 <Spinner/>
-            </div>   
+            </div>
+
+            <Footer />   
         </div>
     );
 
