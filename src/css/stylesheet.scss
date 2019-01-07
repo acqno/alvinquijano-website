@@ -1,0 +1,76 @@
+// global variables
+$background: #262b3f;
+
+// fonts
+@import url('https://fonts.googleapis.com/css?family=Questrial');
+
+html,
+body {
+	box-sizing: border-box;
+	margin: 0;
+}
+
+.bg {
+	background-color: $background;
+	height: 100vh;
+	width: 100vw;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.text-container {
+	color: white;
+	font-family: 'Questrial', sans-serif;
+
+	.title {
+		letter-spacing: 8px;
+		font-size: 3rem;
+	}
+
+	.description {
+		text-align: center;
+	}
+}
+
+@keyframes lds-dual-ring {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes lds-dual-ring {
+	0% {
+		-webkit-transform: rotate(0);
+		transform: rotate(0);
+	}
+	100% {
+		-webkit-transform: rotate(360deg);
+		transform: rotate(360deg);
+	}
+}
+
+.lds-dual-ring {
+	display: flex;
+    justify-content: center;
+    -webkit-transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+	transform: translate(-100px, -100px) scale(1) translate(100px, 100px);
+
+	div {
+		width: 80px;
+		height: 80px;
+		top: 20px;
+		left: 20px;
+		border-radius: 50%;
+		border: 8px solid #000;
+		border-color: #2de3ff transparent #ff2d88 transparent;
+		-webkit-animation: lds-dual-ring 1s linear infinite;
+		animation: lds-dual-ring 1s linear infinite;
+	}
+}
