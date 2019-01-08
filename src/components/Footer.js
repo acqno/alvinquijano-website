@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <div className="footer">
             <div className="footer-container">
-                <h5>&copy; 2019 Alvin Quijano</h5>
+                <h5>&copy; Copyright 2019 Alvin Quijano</h5>
                 <h6><a href="#">alvinquijano.tech</a></h6>
             </div>
         </div>
